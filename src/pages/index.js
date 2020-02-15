@@ -1,10 +1,10 @@
 import React from "react"
 import '../styles/styles.scss'
-import { Link } from "gatsby"
+import Header from "../components/header"
 
 
 const IndexPage = () => (
-  <p>Blue Shades</p>
+  <Header />
 )
 
 export default IndexPage
