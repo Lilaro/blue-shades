@@ -1,34 +1,42 @@
 html,
 body {
-  font-family: "Hevletica";
+  font-family: 'Helvetica Neue' -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 18px;
   color: #fff;
   padding: 0;
   margin: 0;
   background-image: url('../images/neon-sign.jpeg');
+  background-repeat: no-repeat;
   background-size: 100%;
   height: 125vh;
   box-sizing:border-box;
-  margin-top: 0;
 }
 
-header{
-    display: flex;
+.container{
+  display: flex;
+  align-items: stretch;
+  .navigation{
     height: 100px;
     width: 10%;
     position: absolute;
     align-items: center;
-    .navigation{
-        margin-left: 30px;
-        // justify-content: space-between;
-        margin-top: 95px;
-        nav{
-            list-style-type: none;
-            a{
-              font-weight: 900;
-              text-decoration: none;
-              color: #fff;
-            }
-        }
-    }
+    margin: 60px 0px 0px 60px;
+    nav{
+      list-style-type: none;
+      a{
+        font-weight: 900;
+        text-decoration: none;
+        color: #fff;
+      }
+    }   
+  }
+  .titleCard{
+    background-color: #3056bf;
+    opacity: 0.5;
+    width: 650px;
+    height: 800px;
+    border-radius: 20px;
+    margin: 60px auto 0px auto ;
+    padding: 15px;
+  }
 }
