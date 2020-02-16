@@ -8,23 +8,32 @@ import {useStaticQuery, graphql} from 'gatsby'
 
 const IndexPage = ({data}) => (
     <>
-      <div className="container">
+      <div className="container-1">
         <div><Header className="navigation" /></div>
         <div><TitleCard className="titleCard"/></div>
         <div><SocialMenu className="socialMenu"/></div>
-        <div className="ig-images">
+      </div>
+      <div className="container-2">
+
         {data.allInstaNode.edges.map(img => (
           <div className="ig-img" key={img.node.id}>
             <img src={img.node.preview}></img>
-          </div>
-        ))}
-        </div>
-      </div>
+          </div>))}
+        
+      </div>  
     </>
  
 )
 
 export default IndexPage
+
+// export const imgs = ({data}) => {
+//   return data.allInstaNode.edges.map(img => (
+//     <div className="ig-img" key={img.node.id}>
+//       <img src={img.node.preview}></img>
+//     </div>
+//   )), console.log(imgs)
+// }
 
 export const pageQuery = graphql`
 query {

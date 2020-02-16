@@ -62,4 +62,9 @@ body {
 .socialMenu a {
   margin: 15px;
 }
+
+.ig-images .ig-img {
+  height: 200px;
+  width: 200px;
+}
 /*# sourceMappingURL=styles.css.map */
