@@ -1,5 +1,5 @@
-$blueShade : #064e8a;
-$textColor : #EBEBEB;
+$blueShade : rgba(6, 78, 138, 1);
+$textColor : rgb(240, 235, 233);
 
 html,
 body {
@@ -29,17 +29,19 @@ body {
         text-decoration: none;
         color: #fff;
       }
-    //   a:hover { color: $blueShade; }
-    // }   
+      a:hover {
+        color: $blueShade
+      }
+    }   
   }
   .titleCard{
     flex: 1;
-    background-color: $blueShade;
+    background: $blueShade;
     opacity: 0.5;
     width: 500px;
     height: 700px;
     border-radius: 20px;
-    margin: 50px auto 0px auto ;
+    margin: 50px auto 0px auto;
     padding: 15px;
     .text-container{
       padding: 30px 40px 30px 40px;
@@ -55,6 +57,7 @@ body {
   .socialMenu {
     a{
     margin: 15px;
+    }
   }
   
 }
@@ -70,5 +73,6 @@ body {
     margin: 8px;
     max-height: 200px;
     max-width: 200px;
+    overflow: hidden;
   }
 }
