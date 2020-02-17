@@ -4,8 +4,8 @@ const TitleCard = () => {
     return (
         <div className="titleCard">
             <div className="home-content">
-                {/* <h1>Blue Shades</h1> */}
-                <img src="../images/waffle_neon.svg"></img>
+                <h1>Blue Shades</h1>
+                {/* <img src="../images/waffle_neon.svg"></img> */}
                 <p>
                     A single-origin coffee and liege waffle
                     shop in Worcester. With street snacks from 
