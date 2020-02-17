@@ -34,22 +34,6 @@ const TitleCard = () => {
                                 shop in Worcester. With street snacks from 
                                 around the world!
                             </p>
-                            <p>
-                                Come on in. 
-                                Our hours
-                                Monday-Saturday (except Tuesday) 8:30AM-7:00PM
-                                Sunday 10:30AM-3:00PM
-                                Closed Tuesdays
-                            </p>
-                            <p>
-                                256 Park Avenue
-                                Worcester, Massachusetts 01609
-                                United States
-                            </p>
-                            <p>
-                                (774) 420-2718
-                                Email: yumefoods@gmail.com
-                            </p>
                         </div>
         }
     
@@ -60,6 +44,22 @@ const TitleCard = () => {
             <div className="text-container">
                 <h1>Blue Shades</h1>
                 {cardContent}
+                <p className="hours">
+                                Come on in. 
+                                Our hours
+                                Monday-Saturday (except Tuesday) 8:30AM-7:00PM
+                                Sunday 10:30AM-3:00PM
+                                Closed Tuesdays
+                            </p>
+                            <p className="address">
+                                256 Park Avenue
+                                Worcester, Massachusetts 01609
+                                United States
+                            </p>
+                            <p className="contactInfo">
+                                (774) 420-2718
+                                Email: yumefoods@gmail.com
+                            </p>
             </div>
         </div>
         </>
