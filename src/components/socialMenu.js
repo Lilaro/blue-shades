@@ -6,10 +6,10 @@ const SocialMenu = () => {
     return (
         <div className="socialMenu">
             <a href="https://www.instagram.com/blueshadescoffeewaffles/" target="_blank">
-               <img src={igIcon} alt="instagram icon"/>
+               <img src={igIcon} alt="instagram link icon"/>
             </a>
             <a href="https://www.facebook.com/blueshadescoffee/" target="_blank">
-                <img src={fbIcon} alt="facebook icon"/>
+                <img src={fbIcon} alt="facebook link icon"/>
             </a>
         </div>
     )

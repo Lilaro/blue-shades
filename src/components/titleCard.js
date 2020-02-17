@@ -18,18 +18,17 @@ const TitleCard = () => {
                           </p>
         } else if (window.location.pathname === "/menu") { 
             cardContent = <><p>Our Rotating Menu of Street Snacks</p>
-                            <ul>
-                                Grilled Cheese: Homemade italian bread and your choice of cheese
-                                Waffle Sandwiches: with turkey or cheese
-                                Toast: Avocado, Egg 
-                                Dumplings: Shrimp
-                                Sliders: Egg with your choice 
-                                Ramen: Hong Kong style
+                            <ul className="menu-list">
+                                <li>Grilled Cheese: Homemade italian bread and your choice of cheese</li>
+                                <li>Waffle Sandwiches: with turkey or cheese</li>
+                                <li>Toast: Avocado, Egg</li> 
+                                <li>Dumplings: Shrimp</li>
+                                <li>Sliders: Egg with your choice</li> 
+                                <li>Ramen: Hong Kong style</li>
                             </ul>
                             <p>Menu specials come up daily.</p></>
         } else {
             cardContent = <div className="home-content">
-                            <h1>Blue Shades</h1>
                             <p>
                                 A single-origin coffee and liege waffle
                                 shop in Worcester. With street snacks from 
@@ -58,7 +57,10 @@ const TitleCard = () => {
     return (
         <>
         <div className="titleCard">
-            {cardContent}
+            <div className="text-container">
+                <h1>Blue Shades</h1>
+                {cardContent}
+            </div>
         </div>
         </>
     )
