@@ -14,7 +14,7 @@ body {
 .container-1{
   display: flex;
   justify-content: space-between;
-  background-image: url('../images/StreetWaffle.jpg');
+  background-image: url('../images/street-waffle.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   .navigation{
@@ -37,7 +37,7 @@ body {
     width: 500px;
     height: 700px;
     border-radius: 20px;
-    margin: 70px auto 0px auto ;
+    margin: 50px auto 0px auto ;
     padding: 15px;
   }
   .socialMenu{
@@ -54,7 +54,7 @@ body {
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
   justify-content: center;
-  margin: auto;
+  margin: 30px auto auto auto;
   width: 875px;
   .ig-img{
     margin: 8px;
