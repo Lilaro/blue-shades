@@ -3,7 +3,9 @@ import '../styles/styles.scss'
 import Header from '../components/header'
 import TitleCard from '../components/titleCard'
 import SocialMenu from '../components/socialMenu'
-import {useStaticQuery, graphql} from 'gatsby'
+// import Reviews from '../components/reviews'
+// import Places from '../components/places'
+import { graphql} from 'gatsby'
 
 
 const IndexPage = ({data}) => (
@@ -15,25 +17,19 @@ const IndexPage = ({data}) => (
       </div>
       <div className="container-2">
 
-        {data.allInstaNode.edges.map(img => (
+        {data.allInstaNode.edges.slice(0, 5).map(img => (
           <div className="ig-img" key={img.node.id}>
             <img src={img.node.preview}></img>
           </div>))}
         
-      </div>  
+      </div> 
+      {/* <Reviews />  */}
+      {/* <Places /> */}
     </>
  
 )
 
 export default IndexPage
-
-// export const imgs = ({data}) => {
-//   return data.allInstaNode.edges.map(img => (
-//     <div className="ig-img" key={img.node.id}>
-//       <img src={img.node.preview}></img>
-//     </div>
-//   )), console.log(imgs)
-// }
 
 export const pageQuery = graphql`
 query {

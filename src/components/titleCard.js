@@ -4,17 +4,18 @@ const TitleCard = () => {
 
     let cardContent;
         if (window.location.pathname === "/about") {
-            cardContent = <p>
-                            We opened up our shop in what feels like
-                            the heart of Worcester, Park Ave where west
-                            meets central Worcester. It was hard to find
-                            single origin coffee in Worcester, or those gooey,
-                            caramelized liege waffles you can only find at
-                            ski resorts in the US. Or those delectable,
-                            memory-making snacks in various hubs around the
-                            world.  So, here we are--we're grateful we get
-                            to bring tasty and unique foods made with real
-                            ingredients to Worcester.
+            cardContent = <p className="about">
+                            We opened up our shop in what feels like<br/>
+                            the heart of Worcester, Park Ave., where west<br/>
+                            meets central Worcester. It was hard to find<br/>
+                            single origin coffee in Worcester, or those<br/>
+                            gooey, caramelized liege waffles you can<br/>
+                            only find at ski resorts in the US. Or those<br/>
+                            delectable, memory-making snacks in<br/>
+                            various hubs around the world. So, here we<br/>
+                            are--we're grateful we get to bring tasty<br/>
+                            and unique foods made with real ingredients<br/>
+                            to Worcester.
                           </p>
         } else if (window.location.pathname === "/menu") { 
             cardContent = <><p>Our Rotating Menu of Street Snacks</p>
@@ -43,23 +44,25 @@ const TitleCard = () => {
         <div className="titleCard">
             <div className="text-container">
                 <h1>Blue Shades</h1>
-                {cardContent}
-                <p className="hours">
-                                Come on in. 
-                                Our hours
-                                Monday-Saturday (except Tuesday) 8:30AM-7:00PM
-                                Sunday 10:30AM-3:00PM
-                                Closed Tuesdays
-                            </p>
-                            <p className="address">
-                                256 Park Avenue
-                                Worcester, Massachusetts 01609
-                                United States
-                            </p>
-                            <p className="contactInfo">
-                                (774) 420-2718
-                                Email: yumefoods@gmail.com
-                            </p>
+                <p className="card-content">{cardContent}</p>
+                <div className="card-footer">
+                    <p className="address">
+                        256 Park Avenue<br/>
+                        Worcester, Massachusetts 01609<br/>
+                        United States<br/>
+                    </p>
+                    <p className="contactInfo">
+                        (774) 420-2718<br/>
+                        Email: yumefoods@gmail.com<br/>
+                    </p>
+                    <p className="hours">
+                        Come on in.<br/>
+                        Our hours:<br/>
+                        Monday-Saturday (except Tuesday) 8:30AM-7:00PM<br/>
+                        Sunday 10:30AM-3:00PM<br/>
+                        Closed Tuesdays<br/>
+                    </p>
+                </div>
             </div>
         </div>
         </>

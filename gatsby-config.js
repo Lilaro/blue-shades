@@ -34,8 +34,12 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // {
+    //   resolve: `gatsby-source-google-places`,
+    //   options: {
+    //     placeId: 'ChIJr4dJcI4G5IkR_MZCE-1o-RQ',
+    //     apiKey: process.env.GOOGLE_API_KEY
+    //   }
+    // },
   ],
 }

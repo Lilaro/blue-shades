@@ -13,6 +13,7 @@
     "gatsby-plugin-sass": "^2.1.28",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-source-google-places": "0.0.4",
     "gatsby-source-instagram": "^0.6.1",
     "gatsby-transformer-sharp": "^2.3.13",
     "gsap": "^3.1.1",
