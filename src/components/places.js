@@ -2,11 +2,11 @@
 // import { graphql } from "gatsby";
 // import Layout from "../components/layout";
 
-// const PlacesPage = ({ data }) => {
-//   const place = data.googlePlacesPlace;
-//   const reviews = place.childrenGooglePlacesReview.map(r => (
+// const PlacesPage = ({ resp }) => {
+//   const place = resp.googlePlacesPlace;
+//   const reviews = place.data.result.reviews.map(r => (
 //     <div>
-//       <img height="50" width="50" src={r.profile_photo_url} />
+//       {/* <img height="50" width="50" src={r.profile_photo_url} /> */}
 //       <strong>
 //         {r.author_name} - {r.rating}
 //       </strong>
@@ -16,27 +16,27 @@
 //   return (
 //     <Layout>
 //       <h1>{place.name}</h1>
-//       <p>total ratings: {place.user_ratings_total}</p>
+//       {/* <p>total ratings: {place.user_ratings_total}</p> */}
 //       <p>average: {place.rating}</p>
 //       <h3>Recent Reviews</h3>
-//       {reviews}
+//       <div>{reviews}</div>
 //     </Layout>
 //   );
 // };
 
-// export const query = graphql`
+// export const reviewQuery = graphql`
 //   query {
 //     googlePlacesPlace {
-//       name
-//       rating
-//       childrenGooglePlacesReview {
-//         author_name
-//         text
-//         rating
-//         profile_photo_url
+//       data {
+//         result {
+//           reviews {
+//             author_name
+//             rating
+//             text
+//           }
+//         }
 //       }
-//       user_ratings_total
-//     }
+//     }  
 //   }
 // `;
 

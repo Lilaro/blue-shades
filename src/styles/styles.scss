@@ -1,5 +1,5 @@
-$blueShade : rgba(6, 78, 138, 1);
-$textColor : rgb(240, 235, 233);
+$blueShade : #064e8a;
+$textColor : #f0ebe9;
 
 html,
 body {
@@ -68,8 +68,7 @@ body {
     a{
     margin: 15px;
     }
-  }
-  
+  } 
 }
 
 .container-2{
@@ -85,4 +84,9 @@ body {
     max-width: 200px;
     overflow: hidden;
   }
+}
+
+.reviews{
+  display: flex;
+  justify-content: center;
 }

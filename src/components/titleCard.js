@@ -44,7 +44,7 @@ const TitleCard = () => {
         <div className="titleCard">
             <div className="text-container">
                 <h1>Blue Shades</h1>
-                <p className="card-content">{cardContent}</p>
+                <div className="card-content">{cardContent}</div>
                 <div className="card-footer">
                     <p className="address">
                         256 Park Avenue<br/>
