@@ -38,7 +38,7 @@ module.exports = {
       resolve: `gatsby-source-google-places`,
       options: {
         placeId: 'ChIJr4dJcI4G5IkR_MZCE-1o-RQ',
-        apiKey: process.env.GATSBY_PLACES_API_KEY
+        apiKey: process.env.GATSBY_GOOGLE_API_KEY
       }
     },
   ],

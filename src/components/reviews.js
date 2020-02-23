@@ -19,7 +19,8 @@ export default () => {
       }
     `)
 
-    const reviews = resp.googlePlacesPlace.data.result.reviews.map((review) => {
+    const filteredReviews = resp.googlePlacesPlace.data.result.reviews.filter((review) => {return review.rating > 2})
+    const reviews = filteredReviews.map((review) => {
        return <>
           <h4>
             {review.author_name} - {review.rating}
