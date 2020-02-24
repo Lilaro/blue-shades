@@ -1,4 +1,5 @@
 import React from "react"
+import { Helmet } from 'react-helmet'
 import '../styles/styles.scss'
 import Header from '../components/header'
 import TitleCard from '../components/titleCard'
@@ -12,6 +13,13 @@ const IndexPage = ({data}) => {
   console.log(data)
   return (
   <>
+      <div className="application">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Blue Shades Coffee and Liege Waffle Shop</title>
+          <html lang="en" />
+        </Helmet>
+      </div>
       <div className="container-1">
         <div><Header className="navigation" /></div>
         <div><TitleCard className="titleCard"/></div>
@@ -21,7 +29,7 @@ const IndexPage = ({data}) => {
 
         {data.allInstaNode.edges.slice(0, 5).map(img => (
           <div className="ig-img" key={img.node.id}>
-            <img src={img.node.preview}></img>
+            <img src={img.node.preview} alt='Instagram Image'></img>
           </div>))}   
       </div> 
       <div><Reviews className="reviews"/></div>
