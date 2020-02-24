@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Blue Shades`,
@@ -38,7 +42,7 @@ module.exports = {
       resolve: `gatsby-source-google-places`,
       options: {
         placeId: 'ChIJr4dJcI4G5IkR_MZCE-1o-RQ',
-        apiKey: ""
+        apiKey: process.env.GATSBY_PLACES_API_KEY
       }
     },
   ],
