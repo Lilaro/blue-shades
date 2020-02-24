@@ -73,20 +73,27 @@ body {
 
 .container-2{
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  // flex-wrap: wrap-reverse;
   justify-content: center;
-  margin: 30px auto auto auto;
-  width: 875px;
-  .ig-img{
-    margin: 8px;
-    max-height: 200px;
-    max-width: 200px;
-    overflow: hidden;
+  // border-top: #242020 4px solid;
+  margin: 10px 100px 10px 100px;
+  .ig-column{
+    margin: 30px 5px auto 0px;
+    width: 375px;
+    .ig-img{
+      margin: 8px;
+      max-height: 300px;
+      max-width: 300px;
+      overflow: hidden;
+    }
+  }
+  .reviews-column{
+    margin: 30px auto auto 0px;
+    width: 375px;
+    justify-content: right;
+    // display: flex;
+    // justify-content: center;
   }
 }
 
-.reviews{
-  display: flex;
-  justify-content: center;
-}

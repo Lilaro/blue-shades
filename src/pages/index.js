@@ -26,13 +26,14 @@ const IndexPage = ({data}) => {
         <div><SocialMenu className="socialMenu"/></div>
       </div>
       <div className="container-2">
-
-        {data.allInstaNode.edges.slice(0, 5).map(img => (
-          <div className="ig-img" key={img.node.id}>
-            <img src={img.node.preview} alt='Instagram Image'></img>
-          </div>))}   
-      </div> 
-      <div><Reviews className="reviews"/></div>
+        <div className="ig-column">
+          {data.allInstaNode.edges.slice(0, 5).map(img => (
+            <div className="ig-img" key={img.node.id}>
+              <img src={img.node.preview} alt='Instagram Image'></img>
+            </div>))}   
+        </div> 
+        <div className="reviews-column"><Reviews className="reviews"/></div>
+      </div>
     </>
   )
 }
