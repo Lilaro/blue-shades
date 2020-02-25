@@ -20,6 +20,7 @@ const IndexPage = ({data}) => {
           <html lang="en" />
         </Helmet>
       </div>
+      <div className="main-container">
       <div className="container-1">
         <div><Header className="navigation" /></div>
         <div><TitleCard className="titleCard"/></div>
@@ -33,6 +34,7 @@ const IndexPage = ({data}) => {
             </div>))}   
         </div> 
         <div className="reviews-column"><Reviews className="reviews"/></div>
+      </div>
       </div>
     </>
   )
