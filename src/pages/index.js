@@ -5,7 +5,6 @@ import Header from '../components/header'
 import TitleCard from '../components/titleCard'
 import SocialMenu from '../components/socialMenu'
 import Reviews from '../components/reviews'
-// import Places from '../components/places'
 import { graphql} from 'gatsby'
 
 
