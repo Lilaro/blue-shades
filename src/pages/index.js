@@ -5,7 +5,7 @@ import Header from '../components/header'
 import TitleCard from '../components/titleCard'
 import SocialMenu from '../components/socialMenu'
 import Reviews from '../components/reviews'
-import { graphql} from 'gatsby'
+import { graphql } from 'gatsby'
 
 
 const IndexPage = ({data}) => {
@@ -20,20 +20,20 @@ const IndexPage = ({data}) => {
         </Helmet>
       </div>
       <div className="main-container">
-      <div className="container-1">
-        <div><Header className="navigation" /></div>
-        <div><TitleCard className="titleCard"/></div>
-        <div><SocialMenu className="socialMenu"/></div>
-      </div>
-      <div className="container-2">
-        <div className="ig-column">
-          {data.allInstaNode.edges.slice(0, 5).map(img => (
-            <div className="ig-img" key={img.node.id}>
-              <img src={img.node.preview} alt='Instagram Image'></img>
-            </div>))}   
-        </div> 
-        <div className="reviews-column"><Reviews className="reviews"/></div>
-      </div>
+        <div className="container-1">
+          <div><Header className="navigation" /></div>
+          <div><TitleCard className="titleCard"/></div>
+          <div><SocialMenu className="socialMenu"/></div>
+        </div>
+        <div className="container-2">
+          <div className="ig-column">
+            {data.allInstaNode.edges.slice(0, 5).map(img => (
+              <div className="ig-img" key={img.node.id}>
+                <img src={img.node.preview} alt='Instagram Image'></img>
+              </div>))}   
+          </div> 
+          <div className="reviews-column"><Reviews className="reviews"/></div>
+        </div>
       </div>
     </>
   )
