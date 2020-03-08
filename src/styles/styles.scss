@@ -11,82 +11,104 @@ body {
   background: $blueShade;
 }
 
-.container-1{
-  display: flex;
-  justify-content: space-between;
-  background-image: url('../images/espresso-cup.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  height: 800px;
-  .navigation{
-    flex: 1;
-    margin: 35px 0px 0px 30px;
-    nav ul{
-      list-style-type: none;
-      a{
-        font-weight: 450;
-        margin: 0px;
-        text-decoration: none;
-        color: #fff;
-      }
-      a:hover {
-        color: $blueShade
-      }
-    }   
+.main-container{
+  width: auto;
+  min-width: auto;
+  @media(max-width: 90rem){
+    width: 80rem;
+    min-width: 80rem;
   }
-  .titleCard{
-    flex: 1;
-    background: $blueShade;
-    opacity: 0.5;
-    width: 500px;
-    height: auto;
-    min-height: 700px;
-    border-radius: 20px;
-    margin: 50px auto 0px 50px;
-    padding: 15px;
-    .text-container{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 700px;
-      margin: 20px auto auto auto;
-      text-align: center;
-      .card-content{
-        font-size: 1.2em;
-      }
-      .menu-list{
+  @media(max-width: 80rem){
+    width: 61rem;
+    min-width: 61rem;
+  }
+  @media(max-width: 61rem){
+    width: 48rem;
+    min-width: 48rem;
+  }
+  .container-1{
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../images/espresso-cup.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 45rem;
+    width: 100%;
+    .navigation{
+      flex: 1;
+      margin: 35px 0 0 30px;
+      nav ul{
         list-style-type: none;
-        text-align: justify;
+        a{
+          font-weight: 450;
+          margin: 0px;
+          text-decoration: none;
+          color: black;
+        }
+        a:hover {
+          color: $blueShade
+        }
+      }   
+    }
+    .titleCard{
+      flex: 1;
+      background: $blueShade;
+      opacity: 0.5;
+      width: 31.25rem;
+      height: 42rem;
+      // min-height: 700px;
+      border-radius: 20px;
+      margin: 50px auto 0px 50px;
+      padding: 15px;
+      .text-container{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 650px;
+        margin: 20px auto auto auto;
+        text-align: center;
+        .card-content{
+          font-size: 1.2em;
+        }
+        .menu-list{
+          list-style-type: none;
+          text-align: justify;
+        }
       }
     }
-  }
-  .socialMenu{
-    flex: 1;
-    margin: 30px 30px 0 0
-  }
-  .socialMenu {
-    a{
-    margin: 15px;
+    .socialMenu{
+      flex: 1;
+      margin: 30px 30px 0 0
     }
-  } 
-}
-
-.container-2{
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap-reverse;
-  justify-content: center;
-  margin: 30px auto auto auto;
-  width: 875px;
-  .ig-img{
-    margin: 8px;
-    max-height: 200px;
-    max-width: 200px;
-    overflow: hidden;
+    .socialMenu {
+      a{
+      margin: 15px;
+      }
+    } 
+  }
+  .container-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: #242020 4px solid;
+    margin: 30px 100px 10px 100px;
+    .ig-column{
+      margin: 30px 5px auto 0px;
+      width: 375px;
+      .ig-img{
+        margin: 8px;
+        max-height: 300px;
+        max-width: 300px;
+        overflow: hidden;
+      }
+    }
+    .reviews-column{
+      margin: 30px auto auto 0px;
+      width: 375px;
+      justify-content: right;
+    }
   }
 }
 
-.reviews{
-  display: flex;
-  justify-content: center;
-}
+

@@ -19,11 +19,13 @@ export default () => {
       }
     `)
 
-    const filteredReviews = resp.googlePlacesPlace.data.result.reviews.filter((review) => {return review.rating > 2})
+    const filteredReviews = resp.googlePlacesPlace.data.result.reviews.filter((review) => {
+      return review.rating > 2
+    })
     const reviews = filteredReviews.map((review) => {
        return <>
           <h4>
-            {review.author_name} - {review.rating}
+            {review.author_name} - {review.rating} stars
           </h4>
           <p>{`${review.text.substring(0, 250)} ...`}</p>
           </>
