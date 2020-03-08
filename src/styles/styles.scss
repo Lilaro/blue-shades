@@ -11,21 +11,21 @@ body {
   background: $blueShade;
 }
 
-// .main-container{
-//   width: auto;
-//   min-width: auto;
-//   @media(max-width: 90rem){
-//     width: 80rem;
-//     min-width: 80rem;
-//   }
-//   @media(max-width: 80rem){
-//     width: 61rem;
-//     min-width: 61rem;
-//   }
-//   @media(max-width: 61rem){
-//     width: 48rem;
-//     min-width: 48rem;
-//   }
+.main-container{
+  width: auto;
+  min-width: auto;
+  @media(max-width: 90rem){
+    width: 80rem;
+    min-width: 80rem;
+  }
+  @media(max-width: 80rem){
+    width: 61rem;
+    min-width: 61rem;
+  }
+  @media(max-width: 61rem){
+    width: 48rem;
+    min-width: 48rem;
+  }
 .container-1{
   display: flex;
   justify-content: space-between;
@@ -109,6 +109,7 @@ body {
     width: 375px;
     justify-content: right;
   }
+}
 }
 
 
