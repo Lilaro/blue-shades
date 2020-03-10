@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../images/logo.png'
 
 const TitleCard = () => {
 
@@ -42,8 +43,10 @@ const TitleCard = () => {
     return (
         <>
         <div className="titleCard">
+            <a href='/'>
+                <img className='logo' src={logo} />
+            </a>
             <div className="text-container">
-                <h1>Blue Shades</h1>
                 <div className="card-content">{cardContent}</div>
                 <div className="card-footer">
                     <p className="address">
@@ -53,13 +56,12 @@ const TitleCard = () => {
                     </p>
                     <p className="contactInfo">
                         (774) 420-2718<br/>
-                        Email: yumefoods@gmail.com<br/>
+                        yumefoods@gmail.com<br/>
                     </p>
                     <p className="hours">
-                        Come on in.<br/>
-                        Our hours:<br/>
-                        Monday-Saturday (except Tuesday) 8:30AM-7:00PM<br/>
-                        Sunday 10:30AM-3:00PM<br/>
+                        Come on in:<br/>
+                        Mon-Sat (except Tues) 8:30AM-7:00PM<br/>
+                        Sun 10:30AM-3:00PM<br/>
                         Closed Tuesdays<br/>
                     </p>
                 </div>
