@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import '../styles/styles.scss'
 import Header from '../components/header'
 import TitleCard from '../components/titleCard'
-import SocialMenu from '../components/socialMenu'
+// import SocialMenu from '../components/socialMenu'
 import Reviews from '../components/reviews'
 import { graphql } from 'gatsby'
 
@@ -23,7 +23,7 @@ const IndexPage = ({data}) => {
         <div className="container-1">
           <div><Header className="navigation" /></div>
           <div><TitleCard className="titleCard"/></div>
-          <div><SocialMenu className="socialMenu"/></div>
+          {/* <div><SocialMenu className="socialMenu"/></div> */}
         </div>
         <div className="container-2">
           <div className="ig-column">
