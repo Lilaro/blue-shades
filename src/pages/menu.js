@@ -2,7 +2,6 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Header from '../components/header'
 import TitleCard from '../components/titleCard'
-import SocialMenu from '../components/socialMenu'
 
 const MenuPage = () => {
     return (
