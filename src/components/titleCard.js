@@ -33,7 +33,7 @@ const TitleCard = () => {
             cardContent = <div className="home-content">
                             <p>
                                 A single-origin coffee and liege waffle
-                                shop in Worcester. With street snacks from 
+                                shop in Worcester, MA. With street snacks from 
                                 around the world!
                             </p>
                         </div>
@@ -50,9 +50,11 @@ const TitleCard = () => {
                 <div className="card-content">{cardContent}</div>
                 <div className="card-footer">
                     <p className="address">
-                        256 Park Avenue<br/>
-                        Worcester, Massachusetts 01609<br/>
-                        United States<br/>
+                        <a className="address-link" target="_blank" href="https://www.google.com/maps/place/Blue+Shades/@42.2647453,-71.8214347,17z/data=!3m1!4b1!4m5!3m4!1s0x89e4068e704987af:0x14f968ed1342c6fc!8m2!3d42.2647453!4d-71.819246">
+                            256 Park Avenue<br/>
+                            Worcester, Massachusetts 01609<br/>
+                            United States<br/>
+                        </a>
                     </p>
                     <p className="contactInfo">
                         (774) 420-2718<br/>

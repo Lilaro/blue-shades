@@ -9,7 +9,6 @@ $textColor : #f0ebe9;
 
 body{
   width: 100%;
-  // border: 1px solid red;
 }
 
 html,
@@ -21,40 +20,19 @@ body {
   margin: 0;
   background: $blueShade;
 }
-
-.main-container{
-  width: auto;
-  min-width: auto;
-  // border: 2px solid black;
-  // @media(max-width: 1440px){
-  //   width: 100%;
-  //   // min-width: 1280;
-  // }
-  // @media(max-width: 1280px){
-  //   // width: 976px;
-  //   // min-width: 976px;
-  // }
-  // @media(max-width: 976px){
-  //   width: 100%;
-  //   // min-width: 768px;
-  // }
-
   
   .container-1{
-    // display: flex;
-    // justify-content: space-between;
     background-image: url('../images/espresso-cup.jpg');
+    // background-image: url('../images/blue-shades-muted1.jpeg');
     background-repeat: no-repeat;
     border: 0.5px solid $blueShade;
     background-size: cover;
-    // background-attachment: fixed;
     background-position: center;
     height: 45rem;
     width: 100%;
     .navigation{
       display: flex;
       margin: 35px 0 0 30px;
-      // border: 1px solid pink;
       @media (max-width: 700px){
         margin: 0;
       }
@@ -74,7 +52,6 @@ body {
         a:hover {
           color: $blueShade
         }
-    
       } 
       nav li{
         @media (max-width: 700px){
@@ -94,13 +71,14 @@ body {
       }
     }
     .titleCard{
-      background:  #272f36;
-      opacity: 0.5;
-      width: 31.25rem;
-      height: 40rem;
+      background:  #586572;
+      opacity: 0.6;
+      width: max-content;
+      height: max-content;
       border-radius: 20px;
       margin: -6rem auto;
       padding: 15px;
+      
       @media (max-width: 700px){
         width: 80%;
         margin: -1rem auto;
@@ -122,8 +100,15 @@ body {
         .card-content{
           margin: 2rem 3rem 4rem 3rem;
           font-size: 1.6em;
-          font-family: 'Comfortaa';
-          // line-height: 1rem
+          font-family: 'Muli', sans-serif;
+          max-width: 30rem;
+        }
+        .address-link{
+          color: $textColor;
+          text-decoration: none;
+        }
+        .address-link:hover{
+          color: $blueShade;
         }
         .card-footer{
           font-family: 'Muli', sans-serif;
@@ -135,8 +120,8 @@ body {
           text-align: justify;
         }
     }
-    }
   }
+
   .container-2{
     display: flex;
     flex-direction: row;
@@ -147,7 +132,6 @@ body {
       margin: 30px 5px auto 0px;
       width: 40%;
       .ig-img{
-        // margin: 8px;
         max-height: auto;
         max-width: auto;
         overflow: hidden;
