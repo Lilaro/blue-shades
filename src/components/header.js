@@ -14,13 +14,13 @@ const Header = () => (
         </ul>
       </nav>
       <div className="socialMenu">
-            <a href="https://www.instagram.com/blueshadescoffeewaffles/" target="_blank" rel="noopener noreferrer">
-               <img src={igIcon} alt="instagram link icon"/>
-            </a>
-            <a href="https://www.facebook.com/blueshadescoffee/" target="_blank" rel="noopener noreferrer">
-                <img src={fbIcon} alt="facebook link icon"/>
-            </a>
-        </div>
+        <a href="https://www.instagram.com/blueshadescoffeewaffles/" target="_blank" rel="noopener noreferrer">
+            <img src={igIcon} alt="instagram link icon"/>
+        </a>
+        <a href="https://www.facebook.com/blueshadescoffee/" target="_blank" rel="noopener noreferrer">
+            <img src={fbIcon} alt="facebook link icon"/>
+        </a>
+      </div>
     </div>
 
 )
