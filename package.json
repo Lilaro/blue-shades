@@ -17,7 +17,7 @@
     "gatsby-source-google-places": "0.0.4",
     "gatsby-source-instagram": "^0.6.1",
     "gatsby-transformer-sharp": "^2.3.13",
-    "gsap": "^3.1.1",
+    "gsap": "^3.6.0",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
